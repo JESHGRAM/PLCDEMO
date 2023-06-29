@@ -1,0 +1,23 @@
+Name: TagImporter
+Type: RAEtherNetIPTagImporter
+OwnerId: ns=2;g=f0d57ca2694ae89339d45e08bb25e17e
+Children:
+- Name: IgnoredPLCItems
+  Type: BaseDataVariableType
+  DataType: BaseDataType
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+- Name: IgnoredHMIItems
+  Type: BaseDataVariableType
+  DataType: NodeId
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+  Value: []
+- Name: Mode
+  Type: BaseDataVariableType
+  DataType: FetchModes
+  Value: 1
+- Name: FilePath
+  Type: BaseDataVariableType
+  DataType: AbsoluteResourceUri
+  Value: "file:///C:/Users/GEUser/Documents/Studio 5000/Projects/EmulateDATA2.ACD"

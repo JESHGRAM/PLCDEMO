@@ -1,0 +1,138 @@
+Name: Tags
+Type: BaseObjectType
+Children:
+- Name: Controller Tags
+  Type: TagStructure
+  Children:
+  - Name: I1
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "I1"
+  - Name: I2
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "I2"
+  - Name: Excel_data
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Excel_data"
+  - Name: From_Excel
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "From_Excel"
+- Name: 'Program:LineMonitor'
+  Id: g=6e64b95150c1aa97b83a150a9c912474
+  Type: TagStructure
+  Children:
+  - Name: timeMS
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:LineMonitor.timeMS"
+  - Name: TimeStampCAM
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:LineMonitor.TimeStampCAM"
+  - Name: TrayDataOut
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    ValueRank: 2
+    ArrayDimensions: [12,4]
+    Value: 
+     {
+      "Type": 6,
+      "Dimensions": [12,4],
+      "Body": [
+       0,0,0,0,
+       0,0,0,0,
+       0,0,0,0,
+       0,0,0,0,
+       0,0,0,0,
+       0,0,0,0,
+       0,0,0,0,
+       0,0,0,0,
+       0,0,0,0,
+       0,0,0,0,
+       0,0,0,0,
+       0,0,0,0
+      ]
+     }
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:LineMonitor.TrayDataOut"
+  - Name: Tray_out_Filler
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:LineMonitor.Tray_out_Filler"
+  - Name: Tray_out_Sam
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:LineMonitor.Tray_out_Sam"
+  - Name: Tray_out_SchiftReg
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:LineMonitor.Tray_out_SchiftReg"
+  - Name: Tray_row_Filler_Error
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:LineMonitor.Tray_row_Filler_Error"
+  - Name: Tray_row_SAM_Error
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:LineMonitor.Tray_row_SAM_Error"

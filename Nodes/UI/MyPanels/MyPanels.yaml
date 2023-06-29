@@ -1,0 +1,1140 @@
+Name: MyPanels
+Type: FolderType
+Children:
+- Name: Panel1
+  Id: g=5040501fe975f640c8f2a30abe7e084d
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1900.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1200.0
+  - Name: ListBox1
+    Type: ListBox
+    Children:
+    - Name: Model
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"6e64b95150c1aa97b83a150a9c912474","Namespace":12}
+      Children:
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":2,"Id":"c431d82dfed2cf7ba5af3d100f7c35f9","Namespace":12}
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: SelectedValue
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+    - Name: SelectedItem
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":2,"Id":"c431d82dfed2cf7ba5af3d100f7c35f9","Namespace":12}
+    - Name: UISelectedItem
+      Type: BaseDataVariableType
+      DataType: NodeId
+      AccessLevel: Read
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: UISelectedValue
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      AccessLevel: Read
+    - Class: Reference
+      Target: ns=3;i=481
+      Direction: Forward
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 500.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 380.0
+    - Name: Item
+      Type: Alias
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":2,"Id":"c431d82dfed2cf7ba5af3d100f7c35f9","Namespace":12}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 290.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 110.0
+    - Name: Query
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+- Name: Datalogger
+  Id: g=f35d79846501438ab02994fa4ce74dc1
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1980.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1000.0
+  - Name: Rectangle1
+    Type: Rectangle
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1800.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1000.0
+    - Name: BorderThickness
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 5.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 60.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Button1
+      Type: Button
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Button1"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 12.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 120.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 48.0
+      - Name: MouseClickEventHandler1
+        Type: EventHandler
+        Children:
+        - Name: ListenEventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":16,"Namespace":3}
+        - Name: MethodsToCall
+          Type: BaseObjectType
+          Children:
+          - Name: MethodContainer1
+            Type: BaseObjectType
+            Children:
+            - Name: ns=2;ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"Id":58}
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../DataGrid1@NodeId"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: ns=2;Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "Refresh"
+        - Name: EventArguments
+          Type: MouseClickEvent
+          Children:
+          - Name: EventId
+            Type: PropertyType
+            DataType: ByteString
+            Value: ""
+          - Name: EventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: SourceNode
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: SourceName
+            Type: PropertyType
+            DataType: String
+            Value: ""
+          - Name: Time
+            Type: PropertyType
+            DataType: UtcTime
+            Value: "1601-01-01T00:00:00.0000000"
+          - Name: ReceiveTime
+            Type: PropertyType
+            DataType: UtcTime
+            Value: "1601-01-01T00:00:00.0000000"
+          - Name: Message
+            Type: PropertyType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Severity
+            Type: PropertyType
+            DataType: UInt16
+            Value: 0
+    - Name: DataGrid1
+      Type: DataGrid
+      Children:
+      - Name: Model
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":2,"Id":"bfa80b74de3200f7f1fd079624a15a81","Namespace":12}
+        Children:
+        - Name: ItemKind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: Query
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "SELECT * FROM \"DataLogger1\""
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: DataGridColumn
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"Timestamp"}
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+            Value: 0
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            Value: 0
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/Timestamp"
+          - Name: DataItemTemplate
+            Type: DataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/Timestamp"
+        - Name: Excel
+          Type: DataGridColumn
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"Excel"}
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+            Value: 0
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            Value: 0
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/Excel"
+          - Name: DataItemTemplate
+            Type: DataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/Excel"
+        - Name: Turns
+          Type: DataGridColumn
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"Turns"}
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+            Value: 0
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            Value: 0
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/Turns"
+          - Name: DataItemTemplate
+            Type: DataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/Turns"
+        - Name: RowFill
+          Type: DataGridColumn
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"RowFill"}
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+            Value: 0
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            Value: 0
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/RowFill"
+          - Name: DataItemTemplate
+            Type: DataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/RowFill"
+        - Name: FillErr
+          Type: DataGridColumn
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"FillErr"}
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+            Value: 0
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            Value: 0
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/FillErr"
+          - Name: DataItemTemplate
+            Type: DataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/FillErr"
+        - Name: RowSam
+          Type: DataGridColumn
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"RowSam"}
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+            Value: 0
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            Value: 0
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/RowSam"
+          - Name: DataItemTemplate
+            Type: DataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/RowSam"
+        - Name: SamErr
+          Type: DataGridColumn
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"SamErr"}
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+            Value: 0
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            Value: 0
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/SamErr"
+          - Name: DataItemTemplate
+            Type: DataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/SamErr"
+        - Name: Value
+          Type: DataGridColumn
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"Value"}
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+            Value: 0
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            Value: 0
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/Value"
+          - Name: DataItemTemplate
+            Type: DataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/Value"
+      - Name: SelectedItem
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: UISelectedItem
+        Type: BaseDataVariableType
+        DataType: NodeId
+        AccessLevel: Read
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 1420.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 740.0
+      - Name: Item
+        Type: Alias
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 60.0
+      - Class: Reference
+        Target: ns=3;i=504
+      - Name: SortColumn
+        Type: BaseDataVariableType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../Columns/Timestamp@NodeId"
+      - Name: SortOrder
+        Type: BaseDataVariableType
+        DataType: SortOrderEnum
+        ModellingRule: Optional
+        Value: 1
+- Name: Datalogger1
+  Id: g=f89e2a21e7fbddd6663d01537c62b613
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1980.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1000.0
+  - Name: Rectangle1
+    Type: Rectangle
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1800.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1000.0
+    - Name: BorderThickness
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 5.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: -10.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: -40.0
+    - Name: Button1
+      Type: Button
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Button1"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 12.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 120.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 48.0
+      - Name: MouseClickEventHandler1
+        Type: EventHandler
+        Children:
+        - Name: ListenEventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":16,"Namespace":3}
+        - Name: MethodsToCall
+          Type: BaseObjectType
+          Children:
+          - Name: MethodContainer2
+            Type: BaseObjectType
+            Children:
+            - Name: ns=2;ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"Id":58}
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../Datascript1@NodeId"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: ns=2;Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "Refresh"
+        - Name: EventArguments
+          Type: MouseClickEvent
+          Children:
+          - Name: EventId
+            Type: PropertyType
+            DataType: ByteString
+            Value: ""
+          - Name: EventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: SourceNode
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: SourceName
+            Type: PropertyType
+            DataType: String
+            Value: ""
+          - Name: Time
+            Type: PropertyType
+            DataType: UtcTime
+            Value: "1601-01-01T00:00:00.0000000"
+          - Name: ReceiveTime
+            Type: PropertyType
+            DataType: UtcTime
+            Value: "1601-01-01T00:00:00.0000000"
+          - Name: Message
+            Type: PropertyType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Severity
+            Type: PropertyType
+            DataType: UInt16
+            Value: 0
+    - Name: Datascript1
+      Type: DataGrid
+      Children:
+      - Name: Model
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":2,"Id":"bfa80b74de3200f7f1fd079624a15a81","Namespace":12}
+        Children:
+        - Name: ItemKind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: Query
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "SELECT * FROM \"DataLogger1\""
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: DataGridColumn
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"Timestamp"}
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+            Value: 0
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            Value: 0
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/Timestamp"
+          - Name: DataItemTemplate
+            Type: DataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/Timestamp"
+        - Name: Excel
+          Type: DataGridColumn
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"Excel"}
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+            Value: 0
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            Value: 0
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/Excel"
+          - Name: DataItemTemplate
+            Type: DataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/Excel"
+        - Name: Turns
+          Type: DataGridColumn
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"Turns"}
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+            Value: 0
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            Value: 0
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/Turns"
+          - Name: DataItemTemplate
+            Type: DataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/Turns"
+        - Name: RowFill
+          Type: DataGridColumn
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"RowFill"}
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+            Value: 0
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            Value: 0
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/RowFill"
+          - Name: DataItemTemplate
+            Type: DataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/RowFill"
+        - Name: FillErr
+          Type: DataGridColumn
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"FillErr"}
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+            Value: 0
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            Value: 0
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/FillErr"
+          - Name: DataItemTemplate
+            Type: DataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/FillErr"
+        - Name: RowSam
+          Type: DataGridColumn
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"RowSam"}
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+            Value: 0
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            Value: 0
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/RowSam"
+          - Name: DataItemTemplate
+            Type: DataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/RowSam"
+        - Name: SamErr
+          Type: DataGridColumn
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"SamErr"}
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+            Value: 0
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            Value: 0
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/SamErr"
+          - Name: DataItemTemplate
+            Type: DataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/SamErr"
+        - Name: Value
+          Type: DataGridColumn
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"Value"}
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+            Value: 0
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            Value: 0
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/Value"
+          - Name: DataItemTemplate
+            Type: DataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/Value"
+      - Name: SelectedItem
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: UISelectedItem
+        Type: BaseDataVariableType
+        DataType: NodeId
+        AccessLevel: Read
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Class: Reference
+        Target: ns=3;i=504
+        Direction: Forward
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 1360.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 740.0
+      - Name: Item
+        Type: Alias
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: AllowDeselection
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+        Value: false
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 2
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 2
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: -400.0
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 0.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: -420.0
+      - Name: BottomMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 0.0
+      - Name: SortColumn
+        Type: BaseDataVariableType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../Columns/Timestamp@NodeId"
+      - Name: SortOrder
+        Type: BaseDataVariableType
+        DataType: SortOrderEnum
+        ModellingRule: Optional
+        Value: 1
+  - Name: LeftMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 10.0
+  - Name: TopMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 10.0
+  - Name: HorizontalAlignment
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 0
